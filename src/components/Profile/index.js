@@ -17,6 +17,7 @@ export default function Profile() {
                 </User>
                 <Main>
                     <Travels>
+                        <p>Próximas viagens 😎</p>
                         <Travel>
                             <City>
                                 <span>
@@ -27,15 +28,6 @@ export default function Profile() {
                                 </div>
                                
                             </City>
-                            <Value>
-                                <span>
-                                    <ion-icon name="cash-outline"></ion-icon>
-                                </span>
-                                <div>
-                                <p>2500 $</p>
-                                </div>
-                                
-                            </Value>
                         </Travel>
                         <Travel>
                             <City>
@@ -47,15 +39,6 @@ export default function Profile() {
                                 </div>
                                
                             </City>
-                            <Value>
-                                <span>
-                                    <ion-icon name="cash-outline"></ion-icon>
-                                </span>
-                                <div>
-                                <p>2500 $</p>
-                                </div>
-                                
-                            </Value>
                         </Travel>
                         <Travel>
                             <City>
@@ -67,15 +50,6 @@ export default function Profile() {
                                 </div>
                                
                             </City>
-                            <Value>
-                                <span>
-                                    <ion-icon name="cash-outline"></ion-icon>
-                                </span>
-                                <div>
-                                <p>2500 $</p>
-                                </div>
-                                
-                            </Value>
                         </Travel>
                         <Travel>
                             <City>
@@ -87,15 +61,6 @@ export default function Profile() {
                                 </div>
                                
                             </City>
-                            <Value>
-                                <span>
-                                    <ion-icon name="cash-outline"></ion-icon>
-                                </span>
-                                <div>
-                                <p>2500 $</p>
-                                </div>
-                                
-                            </Value>
                         </Travel>
                     </Travels>
                     <Aside>
@@ -131,6 +96,10 @@ const Main = styled.main`
 const Travels = styled.section`
     margin-top: 7vh;
     width: 60vw;
+    p{
+        font-size:32px;
+        padding-bottom:2vh
+    }
 `
 const Aside = styled.aside`
     margin: 7vh 0vw 0vh 15vw;
@@ -156,11 +125,12 @@ const Travel = styled.div`
     border-radius: 5px;
     box-shadow: 3px 3px #D3D3D3;
     margin-bottom: 3vh;
+    display:flex;
 `
 
 const City = styled.div`
     display:flex;
-    padding:3vw 0vw 0vw 3vw;
+    padding:2vw 0vw 2vw 3vw;
     span{
         font-size:32px;
         margin-right: 3vw;
