@@ -7,8 +7,8 @@ import Home from './Home'
 import Produtos from './Produtos';
 import ProdutoPage from './ProdutoPage';
 import Carrinho from './Carrinho';
-import Historico from './Historico';
-import Profile from './Profile';
+import Historic from './Historic';
+import Profile from "./Profile";
 import Favicon from 'react-favicon';
 
 
@@ -28,7 +28,7 @@ export default function App(){
                 <Route path="/produtos" element={<Produtos />}/>
                 <Route path="/produtos/:id" element={<ProdutoPage />}/>
                 <Route path="/carrinho" element={<Carrinho />}/>
-                <Route path="/historico" element={<Historico />}/>
+                <Route path="/historico" element={<Historic />}/>
                 <Route path="/profile" element={<Profile />}/>
             </Routes>
         </UserContext.Provider>
