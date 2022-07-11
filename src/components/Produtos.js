@@ -29,7 +29,7 @@ const ProdutosMainDiv = styled.div`
     .titleNProduct{
         align-items: center;
         display: flex;
-        color: #27AE61;
+        color: #fff;
         font-size: 40px;
         h3{
             font-family: 'Roboto';
@@ -38,7 +38,7 @@ const ProdutosMainDiv = styled.div`
             font-size: 36px;
             line-height: 15px;
             text-align: center;
-            color: #000000;
+            color: #fff;
         }
     }
 

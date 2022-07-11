@@ -8,7 +8,7 @@ export default function Home(){
     <>
         <TopBar/>
         <DivMainHome>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOhp4e_DCXb9j1vUPeRcUOPzJ6Ms1ZRPqIjkuwlW3Q7yT6TAvyJRaHfF140rh7KcE-7gc&usqp=CAU" className="imgHome" alt="home"/>
+            <img src="https://www.segurospromo.com.br/blog/wp-content/uploads/2020/03/paris-a-noite.jpg" className="imgHome" alt="home"/>
             <div className="titleNBtns">
                 <h2>Bem vindo, Fulano</h2>
                 <div className="btns">
@@ -37,6 +37,8 @@ const DivMainHome = styled.div`
         width: 100vw;
         height: 30vh;
         background-size: cover;
+        filter: blur(2.5px);
+        -webkit-filter: blur(2.5px);
     }
 
     h2{
@@ -47,7 +49,7 @@ const DivMainHome = styled.div`
         font-size: 36px;
         line-height: 15px;
         text-align: center;
-        color: #000000;
+        color: #fff;
     }
 
     .titleNBtns{

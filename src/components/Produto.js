@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import  styled  from "styled-components"
 
 export default function Produto(){
@@ -9,6 +10,7 @@ export default function Produto(){
             pais: "Brasil",
             preco: 200,
             avaliacao: "4.4",
+            data: "11/12/22",
             img: "https://www.guiadasemana.com.br/contentFiles/image/opt_w320h320/2018/09/FEA/52309_carro-quebrado-alagoas.jpg"
         },
         {
@@ -17,6 +19,7 @@ export default function Produto(){
             pais: "Brasil",
             preco: 400,
             avaliacao: "4.4",
+            data: "13/12/22",
             img: "http://rumoaomar.org.br/wp-content/uploads/2017/03/2.-Praia-do-Patacho-S%C3%A3o-Miguel-dos-Milagres-AL-1024x768.jpg"
         },
         {
@@ -25,6 +28,7 @@ export default function Produto(){
             pais: "Brasil",
             preco: 100,
             avaliacao: "4.5",
+            data: "10/12/22",
             img: "https://a.cdn-hotels.com/gdcs/production108/d1153/9bb4f4ff-afd9-4267-9e81-8fc370241afc.jpg"
         }
 
@@ -34,12 +38,14 @@ export default function Produto(){
     return(
         <div className="cards">
             {produtosData.map((p)=>(
-                <Card style={{backgroundImage: `url(${p.img})`}}>
-                    <div className="cardDesc">
-                        <h4>{p.nome}</h4>
-                        <h4>R${p.preco}</h4>
-                    </div>
-                </Card>
+                <Link to={`/produtos/${p.id}`} style={{textDecoration:"none"}}>
+                    <Card style={{backgroundImage: `url(${p.img})`}}>
+                        <div className="cardDesc">
+                            <h4>{p.nome}</h4>
+                            <h4>R${p.preco}</h4>
+                        </div>
+                    </Card>
+                </Link>
             ))}
         </div>
     )

@@ -1,7 +1,7 @@
 import UserContext from "../contexts/UserContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import SignUp from "./SignUp/index";
 import Home from "./Home";
 import Produtos from "./Produtos";
 import ProdutoPage from "./ProdutoPage";
@@ -12,6 +12,9 @@ import Favicon from "react-favicon";
 import GlobalStyles from "./globalStyles.js";
 
 export default function App() {
+
+  
+
   const contextValue = {};
 
   return (
