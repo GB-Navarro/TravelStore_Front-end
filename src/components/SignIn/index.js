@@ -61,7 +61,7 @@ import {
               </form>
             </ColumnBox>
             <RowBox>
-              <Link to="/signup">
+              <Link to="/sign-up">
                 <Text> Primeira vez? Cadastre-se! </Text>
               </Link>
             </RowBox>
